@@ -34,6 +34,8 @@ SELECT * FROM `dt_table` WHERE  date between  DATE_FORMAT(CURDATE() ,'%Y-%m-01')
 8.Present Year Records
 Starting from 1st Jan of the current Year till now.
 
+channel=>https://www.youtube.com/c/plus2net1/videos
+
 SELECT * FROM `dt_table` WHERE  date between  DATE_FORMAT(CURDATE() ,'%Y-01-01') AND CURDATE();
 
 9.Last one month records
