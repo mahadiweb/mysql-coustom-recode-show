@@ -46,3 +46,9 @@ SELECT * FROM dt_table where  `date` >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);
 10.Last 10 days records
 
 select * from dt_table where  `date` >= DATE_SUB(CURDATE(), INTERVAL 10 DAY);
+
+11.Select records from today, this week, this month php mysql
+
+SELECT * FROM jokes WHERE date > DATE_SUB(NOW(), INTERVAL 1 DAY) ORDER BY score DESC;        
+SELECT * FROM jokes WHERE date > DATE_SUB(NOW(), INTERVAL 1 WEEK) ORDER BY score DESC;
+SELECT * FROM jokes WHERE date > DATE_SUB(NOW(), INTERVAL 1 MONTH) ORDER BY score DESC;
